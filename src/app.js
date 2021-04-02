@@ -18,12 +18,12 @@ window.onload = function() {
   ];
 
   let excuse =
-    who[Math.floor(Math.random() * 4)] +
+    who[Math.floor(Math.random() * who.length)] +
     " " +
-    action[Math.floor(Math.random() * 4)] +
+    action[Math.floor(Math.random() * action.length)] +
     " " +
-    what[Math.floor(Math.random() * 3)] +
+    what[Math.floor(Math.random() * what.length)] +
     " " +
-    when[Math.floor(Math.random() * 5)];
+    when[Math.floor(Math.random() * when.length)];
   document.querySelector("#excuse").innerHTML = excuse;
 };
